@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "0e1db31d71386956f6b03d26fd870c3b"
+name = "starmaps"
+handle = "starmaps"
+application_url = "https://planned-composite-transcripts-mechanics.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-f0e0d58f.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://planned-composite-transcripts-mechanics.trycloudflare.com/auth/callback",
+  "https://planned-composite-transcripts-mechanics.trycloudflare.com/auth/shopify/callback",
+  "https://planned-composite-transcripts-mechanics.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
